@@ -1,13 +1,19 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router";
-import "./App.css";
-import TabPage from "./TabPage";
-import About from "./About";
+
+import TabPage from "./Pages/HomePage";
+import About from "./Pages/AboutPage";
 import { Stack } from "@mui/material";
 
 function App() {
   return (
     <Router>
-      <Stack spacing={2} direction="row" sx={{ padding: "20px" }}>
+      <Stack
+        spacing={2}
+        justifyContent="center"
+        alignItems={"center"}
+        direction="row"
+        sx={{ padding: "20px" }}
+      >
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>

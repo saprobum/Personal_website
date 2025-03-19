@@ -1,6 +1,5 @@
 import { Stack } from "@mui/material";
 import { motion } from "motion/react";
-import React from "react";
 
 const About = () => {
   return (
