@@ -4,7 +4,7 @@ import TabPage from "./Pages/HomePage";
 import About from "./Pages/AboutPage";
 import { Stack } from "@mui/material";
 
-function App() {
+const App = ()=> {
   return (
     <Router>
       <Stack
