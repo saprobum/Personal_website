@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-import './flipCard.css';
+import './FlipCard.css';
 
 
 
