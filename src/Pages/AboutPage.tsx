@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <Stack spacing={8} sx={{ padding: "20px" }}>
+    <Stack  spacing={8} sx={{ padding: "20px" }}>
       <Stack sx={{ background: "red", padding: "100px" }}>about</Stack>
       <Stack sx={{ background: "red", padding: "100px" }}>about2</Stack>
       <Stack sx={{ background: "red", padding: "100px" }}>about2</Stack>

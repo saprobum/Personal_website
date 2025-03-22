@@ -2,8 +2,6 @@ import {useState} from 'react'
 
 import './FlipCard.css';
 
-
-
 interface FlipCardProps {
   front: string;
   back: string;

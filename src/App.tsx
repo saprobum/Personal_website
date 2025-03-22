@@ -4,6 +4,7 @@ import TabPage from "./Pages/HomePage";
 import PortFolioPage from "./Pages/PortfolioPage";
 import About from "./Pages/AboutPage";
 import { Stack } from "@mui/material";
+import ThemeSwitcherPage from "./Pages/ThemeSwitcherPage";
 
 const NavLinks = () => {
   const location = useLocation();
@@ -12,10 +13,11 @@ const NavLinks = () => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/portfolio", label: "Portfolio" },
+    { to: "/themeswitch", label: "switchtheme" },
   ];
 
   return (
-    <Stack sx={{margin:"20px"}} direction={"row"} justifyContent={"center"} spacing={2}>
+    <Stack className="dark:bg-gray-800" sx={{padding:"20px"}} direction={"row"} justifyContent={"center"} spacing={2}>
       {links.map((link, index) => (
         <Link
           to={link.to}
@@ -40,6 +42,7 @@ const App = () => {
         <Route path="/" element={<TabPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<PortFolioPage />} />
+        <Route path="/themeswitch" element={<ThemeSwitcherPage />} />
       </Routes>
     </Router>
   );

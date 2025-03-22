@@ -19,14 +19,14 @@ function TabPage() {
     const { children, value, index, ...other } = props;
 
     return (
-      <div
+      <div className="dark:bg-[blue]" 
         role="tabpanel"
         hidden={value !== index}
         id={`simple-tabpanel-${index}`}
         aria-labelledby={`simple-tab-${index}`}
         {...other}
       >
-        {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+        {value === index && <Box  sx={{ p: 3 }}>{children}</Box>}
       </div>
     );
   }
@@ -43,9 +43,10 @@ function TabPage() {
   }
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%" }} >
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
+        <Tabs 
+        className="dark:bg-[cyan]"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
