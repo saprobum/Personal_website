@@ -25,8 +25,10 @@ const About = () => {
       >
         chiching fak
       </motion.div>
-      <Stack sx={{ background: "red", padding: "400px" }}>about2</Stack>
-      <Stack sx={{ background: "red", padding: "400px" }}>about2</Stack>
+      <Stack sx={{ background: "red", padding: "100px" }}>about2</Stack>
+      <Stack sx={{ background: "red", padding: "100px" }}>about2</Stack>
+      <Stack sx={{ background: "red", padding: "100px" }}>about2</Stack>
+      <Stack sx={{ background: "red", padding: "100px" }}>about2</Stack>
     </Stack>
   );
 };
