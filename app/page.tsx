@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero";
 import { SkillsMarquee } from "@/components/skills-marquee";
 import { ProjectGrid } from "@/components/project-grid";
 import { ExperienceTimeline } from "@/components/experience-timeline";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -12,12 +13,7 @@ export default function Home() {
       <SkillsMarquee />
       <ProjectGrid />
       <ExperienceTimeline />
-
-      <footer className="py-10 text-center text-sm text-muted-foreground border-t border-border/40 bg-background/50 backdrop-blur-sm">
-        <div className="container px-4">
-          <p>© {new Date().getFullYear()} Antigravity Portfolio. Built with Next.js & Framer Motion.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
